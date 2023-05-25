@@ -1,25 +1,44 @@
 import './nav.css';
 import img from '../../img/image.jpg';
+import { NavLink } from "react-router-dom";
 import React from 'react'
 
 const nav = () => {
+  const activeLink = 'nav-list__link nav-list__link--active';
+  const noActiveLink = 'nav-list__link';
   return (
     <div className='nav-all'>
       <div className='nav'>
         <div className='logo'>
-            <a href="/" className='logo-h1'>minimø</a>
+          <a href="/" className='logo-h1'>minimø</a>
         </div>
         <div className='nav-menu'>
           <ul className="nav-list">
-            <li class="nav-list__item"><a href="/" class="nav-list__link">lifestyle</a></li>
-            <li class="nav-list__item"><a href="/photodiary" class="nav-list__link">photodiary</a></li>
-            <li class="nav-list__item"><a href="/" class="nav-list__link">music</a></li>
-            <li class="nav-list__item"><a href="/" class="nav-list__link">travel</a></li>
+            <li class="nav-list__item">
+              <NavLink to="/" className={({ isActive }) => {
+                return isActive ? activeLink : noActiveLink;
+              }}>lifestyle</NavLink>
+              </li>
+            <li class="nav-list__item">
+              <NavLink to="/photodiary" className={({ isActive }) => {
+                return isActive ? activeLink : noActiveLink;
+              }}>photodiary</NavLink>
+              </li>
+            <li class="nav-list__item">
+              <NavLink to="/music" className={({ isActive }) => {
+                return isActive ? activeLink : noActiveLink;
+              }}>music</NavLink>
+              </li>
+            <li class="nav-list__item">
+            <NavLink to="/travel" className={({ isActive }) => {
+                return isActive ? activeLink : noActiveLink;
+              }}>travel</NavLink>
+              </li>
           </ul>
         </div>
       </div>
       <div className='nav-img'>
-        <img src={img} alt="title" className='image'/>
+        <img src={img} alt="title" className='image' />
       </div>
       <div className='nav-text'>
         <h4 className='nav-text-h4'>photodiary</h4>

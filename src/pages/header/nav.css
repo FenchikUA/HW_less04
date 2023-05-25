@@ -71,3 +71,7 @@
   letter-spacing: 5px;
   text-decoration: none;
 }
+
+.nav-list__link--active {
+  color: red;
+}
