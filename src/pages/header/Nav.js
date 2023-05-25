@@ -10,7 +10,7 @@ const nav = () => {
     <div className='nav-all'>
       <div className='nav'>
         <div className='logo'>
-          <a href="/" className='logo-h1'>minimø</a>
+          <NavLink to="/" className='logo-h1'>minimø</NavLink>
         </div>
         <div className='nav-menu'>
           <ul className="nav-list">

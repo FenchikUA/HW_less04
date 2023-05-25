@@ -15,6 +15,7 @@ import g from '../../img/g+.png';
 import t from '../../img/t.png';
 import pint from '../../img/pint.png';
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Photodiary = () => {
   return (
@@ -30,11 +31,11 @@ const Photodiary = () => {
           <div className='photo-social'>
             <p>Share</p>
             <ul className="social-photo">
-              <li className="social-photo"><a href="#!"><img src={faceb} alt="Link" /></a></li>
-              <li className="social-photo"><a href="#!"><img src={tw} alt="Link" /></a></li>
-              <li className="social-photo"><a href="#!"><img src={g} alt="Link/" /></a></li>
-              <li className="social-photo"><a href="#!"><img src={t} alt="Link/" /></a></li>
-              <li className="social-photo"><a href="#!"><img src={pint} alt="Link/" /></a></li>
+              <li className="social-photo"><NavLink to="#!"><img src={faceb} alt="Link" /></NavLink></li>
+              <li className="social-photo"><NavLink to="#!"><img src={tw} alt="Link" /></NavLink></li>
+              <li className="social-photo"><NavLink to="#!"><img src={g} alt="Link/" /></NavLink></li>
+              <li className="social-photo"><NavLink to="#!"><img src={t} alt="Link/" /></NavLink></li>
+              <li className="social-photo"><NavLink to="#!"><img src={pint} alt="Link/" /></NavLink></li>
             </ul>
           </div>
         </div>
@@ -87,8 +88,8 @@ const Photodiary = () => {
                 <div className='coment-social'>
                   <p>Connected with </p>
                   <ul className="social-coment">
-                    <li className="social-coment"><a href="#!"><img src={tw} alt="Link" /></a></li>
-                    <li className="social-coment"><a href="#!"><img src={face} alt="Link" /></a></li>
+                    <li className="social-coment"><NavLink to="#!"><img src={tw} alt="Link" /></NavLink></li>
+                    <li className="social-coment"><NavLink to="#!"><img src={face} alt="Link" /></NavLink></li>
                   </ul>
                 </div>
               </div>
