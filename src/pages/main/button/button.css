@@ -1,0 +1,17 @@
+.btn {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.main-btn {
+  color: #626262;
+  font-size: 22px;
+  padding: 15px 30px;
+  background: #fff;
+  border: 1px solid #626262;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: #f0f0f0;
+}

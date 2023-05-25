@@ -1,0 +1,31 @@
+.footer-all {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social li {
+  list-style: none;
+}
